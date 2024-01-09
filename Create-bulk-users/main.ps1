@@ -1,8 +1,8 @@
 #CREATE BULK USERS WITH CSV FILE
 
-$password = ConvertTo-SecureString 'Testuser@345' -AsPlainText -Force
+$password = ConvertTo-SecureString 'yourpassword' -AsPlainText -Force
 
-Import-Csv -Path "C:\Users\DELL PC\Desktop\POWERSHELL  FILES\CSV FILES\Azure users@cloud433.csv" | `
+Import-Csv -Path "input file path" | `
 foreach { New-AzADUser `
 -DisplayName $_.DisplayName `
 -MailNickname $_.MailNickname `
