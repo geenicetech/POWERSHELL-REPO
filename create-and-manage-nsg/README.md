@@ -1,4 +1,4 @@
-##This powershell script performs the following task
+## This powershell script performs the following task
 
 Create resource group
 Create a security rule
